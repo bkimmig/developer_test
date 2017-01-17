@@ -40,7 +40,21 @@ If you ever want to leave the virtual environment use the command (you shouldn't
 
 
 
+
 ## The Test
 
-You should be able to complete this challenge using only Flask, if you need/install other packages let us know.
+You should be able to complete this challenge using only Flask and the <a href='http://docs.python-requests.org/en/master/'> requests </a> module (you do not need to write the API request I have given you a class for this), if you needed/installed other packages let us know, but you should not need to.
+
+The challenge here is fairly simple, and is comprised of a few simple steps.
+
+1. Create a form that takes an artist name.
+2. Clean the form data
+3. Request data from the Spotify API
+4. Display the artist data obtained from Spotify in an HTML table
+
+
+We want you to create a view that renders an HTML table with the data we have provided you.
+
+
+https://shkspr.mobi/blog/2016/05/easy-apis-without-authentication/
 
