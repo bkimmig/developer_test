@@ -24,9 +24,11 @@ You can then activate the virtual environment with
 
     $ source activate dev_test
 
-You can use anaconda to install Flask with 
+You can use anaconda to install Flask with. The application will also rely on the json package so install that as well. 
     
     $ conda install flask
+
+    $ conda install json
 
 If you ever want to leave the virtual environment use the command (you shouldn't need to during the test). 
 
@@ -35,9 +37,42 @@ If you ever want to leave the virtual environment use the command (you shouldn't
 
 ## Current Application Structure
 
+Here we give you the basic framework for a Flask application. When you unzip the directory you will see folders in the following structure.
 
+dev-test/
+    app/
+        main_app/
+            views/
+                home.py
+            __init__.py
+        static/
+            css/
+            js/
+            vendor/
+                bootstrap/
+                    ...
+                jquery/
+                    ...
+        templates/
+            main_app/
+                home.html
+            base.html
+            navbar.html
+        __init__.py
+    config.py
+    requirements.txt
+    run.py
+    README.md
 
+The views for this application live in main_app. You should only need to add files in that directory and in the templates directory. If you decide to use JavaScript (write your own) for any reason you can put it into the static/js/ folder (you shouldn't need to), or put it at the top of the html file.
 
+### Running The Application
+
+If you want to run the application type
+    
+    $ python run.py
+
+in the dev-test directory. Then go to the url printed in the terminal in your browser. It should be http://127.0.0.1:3000/
 
 
 
