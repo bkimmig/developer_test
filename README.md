@@ -58,13 +58,18 @@ dev-test/
                 home.html
             base.html
             navbar.html
+        spotify_api/
+            spotify.py
         __init__.py
     config.py
     requirements.txt
     run.py
     README.md
 
-The views for this application live in main_app. You should only need to add files in that directory and in the templates directory. If you decide to use JavaScript (write your own) for any reason you can put it into the static/js/ folder (you shouldn't need to), or put it at the top of the html file.
+The views for this application live in main_app. You should only need to add files in that directory and in the templates directory. If you decide to use JavaScript (write your own) for any reason you can put it into the static/js/ folder, or put it at the top of the html file.
+
+You should take a look at the spotify_api/spotify.py. You will want to use this to get the data. Feel free to write your own if you feel more comfordable doing that.
+
 
 ### Running The Application
 
@@ -75,21 +80,42 @@ If you want to run the application type
 in the dev-test directory. Then go to the url printed in the terminal in your browser. It should be http://127.0.0.1:3000/
 
 
-
 ## The Test
 
 You should be able to complete this challenge using only Flask and the <a href='http://docs.python-requests.org/en/master/'> requests </a> module (you do not need to write the API request I have given you a class for this), if you needed/installed other packages let us know, but you should not need to.
 
-The challenge here is fairly simple, and is comprised of a few simple steps.
+In the most basic case, we want you to set up a view containing a form that allows a user to query Spotify for an artist's albums. Then we would like you to display the results in a HTML table. The table should contain the following columns:
 
-1. Create a form that takes an artist name.
-2. Clean the form data
+- artist name
+- image
+- albumn name
+- albumn type
+- U.S. available
+
+
+We have provided a class to perform the Spotify query, spotify_api/spotify.py, you are welcome to use that but it is not required.  The columns of the table should contain
+
+We have set up a couple of blank files for you to fill in. Feel free to add more if you need to.
+
+- app/main_app/forms/artist_form.py
+- app/main_app/views/album_view.py
+- app/templates/main_app/artist_form.html
+- app/templates/main_app/album_view.html
+
+
+### Tips/Steps
+
+Here are some tips/steps to help you, they are not the only way to do this just to provide guidance if needed. 
+
+
+1. Create a view with html form that takes an artist name.
+    - There should be a link to this page in the navbar.
+    - View should have both post and get methods.
+
+2. Form data
+    - Create a flask form to handle the data.
+    - The form should clean and validate that it. 
+
 3. Request data from the Spotify API
-4. Display the artist data obtained from Spotify in an HTML table
 
-
-We want you to create a view that renders an HTML table with the data we have provided you.
-
-
-https://shkspr.mobi/blog/2016/05/easy-apis-without-authentication/
-
+4. Display the artist data obtained from Spotify in an HTML table. Use the Flask templates to render the data in the HTML table.
