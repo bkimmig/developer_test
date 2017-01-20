@@ -18,9 +18,9 @@ If you know about Python and how to set it up you can skip the Python/Virtual En
 
 Here is a basic tutorial for virtual environment with Anaconda if you would like to read more than what is written here https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/.
 
-After downloading Anaconda, set up the environment from the command line using the following. We do not want any default packages with python, you should be able to complete this challenge using only Flask and requests, if you install other packages/dependencies let us know.
+After downloading Anaconda, set up the environment from the command line using the following. We do not want any default packages with python, you should be able to complete this challenge using only Flask, requests and wtforms, if you install other packages/dependencies let us know.
 
-    $ conda create --no-deps --no-default-packages -n dev_test python=3.4 anaconda
+    $ conda create -n dev_test python=3.4 anaconda
 
 You can then activate the virtual environment with
 
@@ -110,6 +110,8 @@ We have set up a couple of blank files for you to fill in. Feel free to add more
 - app/main_app/views/album_view.py
 - app/templates/main_app/artist_form.html
 - app/templates/main_app/album_view.html
+
+Finally, add a link to the new page in the navigation bar at the top of the page.
 
 
 ### Tips/Steps

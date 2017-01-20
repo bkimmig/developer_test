@@ -4,15 +4,6 @@
 {% block content %}
 
 <!-- Create the table in this file. You can hard code the column names in but the body of the table should be dynamic -->
-<div class='container-fluid' style='padding-top: 50px; width: 40%'>
-<form class='form' method='post' action="{{ url_for('main_app.album_view') }}">
-    <div class="form-group">
-        <label for="artist">Artist Name:</label>
-        <input type="text" name='artist' class="form-control" id="artist">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
 
 
 {% endblock %}
