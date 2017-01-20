@@ -76,7 +76,7 @@ dev-test/
 
 The views for this application live in main_app directory. You should only need to add files in that directory and in the templates directory. If you decide to use JavaScript (write your own) for any reason you can put it into the static/js/ folder, or put it at the top of the html file.
 
-You should take a look at the spotify_api/spotify.py. You will want to use this to get the data. Feel free to write your own if you feel more comfordable doing that.
+You should take a look at the spotify_api/spotify.py. You will want to use this to get the data. Feel free to write your own if you feel more comfortable doing that.
 
 
 ### Running The Application
@@ -100,7 +100,7 @@ In the most basic case, we want you to set up a view containing a form that allo
 - albumn type
 - U.S. available
 
-Feel free to hardcode in the column names of the table. The results however should always be dymamically inserted.
+Feel free to hard code in the column names of the table. The results however should always be dynamically inserted.
 
 We have provided a class to perform the Spotify query, spotify_api/spotify.py, you are welcome to use that but it is not required.
 
