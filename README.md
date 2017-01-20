@@ -96,11 +96,11 @@ In the most basic case, we want you to set up a view containing a form that allo
 
 - artist name
 - image
-- albumn name
-- albumn type
+- album name
+- album type
 - U.S. available
 
-Feel free to hardcode in the column names of the table. The results however should always be dymamically inserted.
+Feel free to hard code in the column names of the table. The results however should always be dynamically inserted.
 
 We have provided a class to perform the Spotify query, spotify_api/spotify.py, you are welcome to use that but it is not required.
 
@@ -113,6 +113,10 @@ We have set up a couple of blank files for you to fill in. Feel free to add more
 
 Finally, add a link to the new page in the navigation bar at the top of the page.
 
+You can see some pictures of what we expect to see in the main directory. Feel free to style however you want, we are looking primarily for functionality. For our photos we only used the basic bootstrap styling, which is available to you in the current structure. The following images should give you some guidance.
+
+- search_page.png
+- album_table.png
 
 ### Tips/Steps
 
