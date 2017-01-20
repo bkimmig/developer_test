@@ -3,6 +3,31 @@
 
 {% block content %}
 
+<div class='container-fluid' style='padding-bottom: 20px'>
+    Here are the first 20 albums from Spotify of the artist you searched for.
+</div>
+
 <!-- The form you put here should post to your view that will clean the data. -->
+<div class='container-fluid'>
+    <table class='table' style="width:100%">
+      <tr>
+        <th>Artist Name</th>
+        <th>Image</th> 
+        <th>Album Name</th>
+        <th>Album Type</th>
+        <th>U.S. Avaliability</th>        
+      </tr>
+
+      {% for d in data %}
+          <tr>
+            <td>{{d.artist}}</td>
+            <td><img src="{{d.image_url}}"></td> 
+            <td>{{d.album_name}}</td>
+            <td>{{d.album_type}}</td>
+            <td>{{d.us_available}}</td>    
+          </tr>
+      {% endfor %}
+    </table>
+</div>
 
 {% endblock %}

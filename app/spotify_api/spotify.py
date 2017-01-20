@@ -59,7 +59,7 @@ class Spotify(object):
             info = {
                 'artist': album['artists'][0]['name'],
                 'image_url': album['images'][2]['url'],
-                'albumn_name': album['name'],
+                'album_name': album['name'],
                 'us_available': 'US' in album['available_markets'],
                 'album_type': album['album_type']
             }
