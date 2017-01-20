@@ -34,6 +34,11 @@ You should also install the requests package.
 
     $ conda install requests
 
+If you use a Flask form you will want the wtforms package.
+
+    $ conda install wtforms
+
+
 If you ever want to leave the virtual environment use the command (you shouldn't need to during the test). 
 
     $ source deactivate dev_test
